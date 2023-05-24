@@ -1,0 +1,15 @@
+<ActionBar android:title="Resultado">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+    <ActionItem android.systemIcon="ic_menu_share" (tap)="onShare($event)" android.position="actionBar"></ActionItem>
+</ActionBar>
+<ListView class="page" class="list-group" [items]="results">
+    <ng-template let-result="item">
+        <GridLayout rows="auto" columns="auto,*" class="list-group-item">
+            <Image row="0" col="0" src="res://img_vidro" class="m-r-10" width="45%"></Image>
+            <StackLayout row="0" col="1">
+                <Label *ngFor="let output of result.outputs" class="h3"
+                    text="{{output.name}}: {{output.value}} {{output.unit}}"></Label>
+            </StackLayout>
+        </GridLayout>
+    </ng-template>
+</ListView>

@@ -1,0 +1,14 @@
+<ActionBar android:title="Tipo de Cálculo">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<GridLayout>
+    <ListView class="list-group" [items]="calculos" (itemTap)="goToCalcInput($event)">
+        <ng-template let-calculo="item">
+            <GridLayout rows="auto,auto" columns="auto,*" class="list-group-item">
+                <Image row="0" col="0" rowSpan="2" [src]="calculo.img" class="thumb"></Image>
+                <Label row="0" col="1" class="list-group-item-heading" [text]="calculo.name"></Label>
+                <Label row="1" col="1" class="list-group-item-text" [text]="calculo.description"></Label>
+            </GridLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

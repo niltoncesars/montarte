@@ -1,0 +1,30 @@
+.icon {
+    border-radius: 50;
+    font-size: 40;
+    width: 90;
+    height: 90;
+    color: white;
+    text-align: center;
+    padding-top: 23;
+
+}
+
+.icon-green {
+    background-color: rgb(84, 190, 178, 0.7)
+}
+
+.icon-red {
+    background-color: rgb(209, 106, 110, 0.7)
+}
+
+.icon-blue {
+    background-color: rgb(85, 163, 187, 0.7)
+}
+
+.icon-text {
+    color: white;
+    text-align: center;
+    font-family: "Varela", "varela-regular";
+    padding: 5;
+    margin-bottom: 5;
+}

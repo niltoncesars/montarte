@@ -1,0 +1,62 @@
+@import '~nativescript-theme-core/css/core.light.css';
+
+.fa {
+    Font-family: "Font Awesome 5 Free", "fa-regular-400", "fa-solid-900";
+}
+
+.fa-solid {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+.fa-brands {
+    font-family: "Font Awesome 5 Free Brands Regular", "fa-brands-400";
+}
+
+.page {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.center {
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+.btn-blue {
+    border-radius: 3;
+    background-color: #4d66a2;;
+    font-size: 16;
+    width: 75%;
+    font-family: 'Open Sans', 'OpenSans-Regular';
+}
+
+.company-image {
+    transform:scale(0.9,0.9) translate(0,54);
+    animation-name: intro-company-intro;
+    animation-duration: 4;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.anim-fade-in{
+
+    animation-name: intro-element-intro;
+    animation-duration: 2;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    background-repeat: no-repeat;
+
+}
+
+@keyframes intro-element-intro {
+    0% {
+        opacity:0;
+        duration: 3000;
+    }
+    100% {
+        opacity:1;
+        duration: 3000;
+    }
+}

@@ -1,0 +1,17 @@
+<ScrollView class="page page-content anim-fade-in" backgroundImage="{{backgroundImage}}">
+    <WrapLayout orientation="horizontal" itemWidth="300" itemHeight="250"
+        class="center">
+        <Image src="res://img_logo" ></Image>
+        <GridLayout columns="auto, 50, auto" rows="90, auto, 90, auto" class="center">
+            <Label text="&#xf017;" row="0" col="0" class="fa-solid icon icon-green "></Label>
+            <Label text="&#xf39e;" row="0" col="2" class="fa-brands icon icon-blue"></Label>
+            <Label text="&#xf167;" row="2" col="0" class="fa-brands icon icon-red"></Label>
+            <Label text="&#xf1ec;" row="2" col="2" class="fa-solid icon icon-blue"
+                (tap)="goToCalcList()"></Label>
+            <Label text="Fazer Pedido" row="1" col="0" class="icon-text"></Label>
+            <Label text="Facebook" row="1" col="2" class="icon-text"></Label>
+            <Label text="Video" row="3" col="0" class="icon-text"></Label>
+            <Label text="Calcular" row="3" col="2" class="icon-text"></Label>
+        </GridLayout>
+    </WrapLayout>
+</ScrollView>
